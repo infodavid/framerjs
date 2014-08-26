@@ -49,9 +49,9 @@
 
 要添加 CSS 样式，你可以编辑图层样式特性的属性，你可以一次性设置这些，像是 `layer.style.backgroundColor = “red” `或者`layer.style['background-color'] = “red”`，也可以像下面这个例子一样一次性更新多个属性。需要注意的是，虽然大部分 framer 属性可取数值，但样式特性仍需要特定的 css 值。如`layer.style.lineHeight = “16px”`，你也可以通过 `layer.classList.add(“myClass”)` 来设置一个 css；这样，你就可以使用一个外部的css文件进行样式化。
 
-  # 一次设置多个图层样式
-  layer.style = {"font-size": "18px","text-align": "center",
-  "line-height": "24px","color": "red"}
+    # 一次设置多个图层样式
+    layer.style = {"font-size": "18px","text-align": "center",
+    "line-height": "24px","color": "red"}
 
 备注：如果你在一个图层中设置单个样式，别忘了使用 JavaScript 的语法，比如说 ‘font-size’ 就会是 layer.fontSize
 
@@ -64,11 +64,11 @@ Framer 有一个辅助方法可以很好的为你匹配大多数的事件，比�
 
 要监听一个时间的话，使用 `layer.on event, ->…` 停止监听的话，可以使用 `layer.off event, -> …` 你可以一次监听多个事件
   
-  # 在一个图层中监听多个事件
-  layer.on Events.TouchStart, (event) ->
-  console.log "Touch/click start happened on layer"layer.on Events.TouchMove, (event) -> 
-  console.log "Touch/click is moving!"layer.on Events.TouchEnd, (event) ->
-  console.log "The touch has ended :("
+    # 在一个图层中监听多个事件
+    layer.on Events.TouchStart, (event) ->
+    console.log "Touch/click start happened on layer"layer.on Events.TouchMove, (event) -> 
+    console.log "Touch/click is moving!"layer.on Events.TouchEnd, (event) ->
+    console.log "The touch has ended :("
 
 你会注意到函数中的 `event`，它是一个拥有附加信息（有关事件发生的，比如说位置信息）的对象。
 
