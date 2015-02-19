@@ -17,4 +17,4 @@ Framer.js 是一款基于 JavaScript 的可交互原型框架，你可以通过�
 
 Name: 大蔚陈
 
-Email: [idavid.info@gmail.com](idavid.info@gmail.com)
+Email: `idavid.info@gmail.com`
